@@ -36,13 +36,12 @@ namespace DeviceMigration
             List<Guid> devicesCreated = new List<Guid>();
             for (int i = 0; i < iotDevices.Count(); i++)
             {
-                if (iotDevices.ElementAt(i).DeviceId.Equals("Otromas"))
-                {
-                    Entity device = new Entity("msdyn_iotdevice");
-                    device["msdyn_deviceid"] = iotDevices.ElementAt(i).DeviceId + "frombatch";
-                    device["msdyn_name"] = "Device migrated " + i;
-                    devicesCreated.Add(_service.Create(device));
-                }
+                
+               Entity device = new Entity("msdyn_iotdevice");
+               device["msdyn_deviceid"] = iotDevices.ElementAt(i).DeviceId;
+               device["msdyn_name"] = "Device migrated " + i;
+               devicesCreated.Add(_service.Create(device));
+                
             }
             Console.WriteLine("Devices created in D365: " + devicesCreated.Count());
             return await Task.FromResult(devicesCreated);
@@ -54,6 +53,7 @@ namespace DeviceMigration
         /// <returns></returns>
         public static void RegisterDevFromD365ToAzure(IEnumerable<Guid> iotDevices)
         {
+            Console.WriteLine("Executing Register Action in D365");
             string param = "";
             foreach (var guid in iotDevices)
             {
@@ -62,9 +62,7 @@ namespace DeviceMigration
             param = param.Substring(0, param.Length - 1);
 
             OrganizationRequest Req = new OrganizationRequest("msdyn_RegisterIoTDevice");
-
             Req["IoTDeviceIds"] = param; 
-
             OrganizationResponse Respons = _service.Execute(Req);
         }
     }

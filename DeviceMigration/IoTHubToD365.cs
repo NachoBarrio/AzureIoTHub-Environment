@@ -43,7 +43,7 @@ namespace DeviceMigration
             Console.WriteLine(devices.Count() + " devices recovered from IoT Hub");
             var devices_GUIDs = await D365Utils.CreateDevicesD365(devices);
             D365Utils.RegisterDevFromD365ToAzure(devices_GUIDs);
-            Console.WriteLine("End of procedure");
+            Console.WriteLine("End of execution");
         }
 
 
