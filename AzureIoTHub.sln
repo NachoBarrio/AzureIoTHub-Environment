@@ -13,6 +13,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{DDF8DD
 		config\config.yaml = config\config.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assemblies", "assemblies", "{2DB8AD22-A95D-46A3-AAEC-38F4B2D3B896}"
+	ProjectSection(SolutionItems) = preProject
+		assemblies\Microsoft.Crm.Sdk.Proxy.dll = assemblies\Microsoft.Crm.Sdk.Proxy.dll
+		assemblies\Microsoft.Xrm.Sdk.Deployment.dll = assemblies\Microsoft.Xrm.Sdk.Deployment.dll
+		assemblies\Microsoft.Xrm.Sdk.dll = assemblies\Microsoft.Xrm.Sdk.dll
+		assemblies\Microsoft.Xrm.Tooling.Connector.dll = assemblies\Microsoft.Xrm.Tooling.Connector.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
