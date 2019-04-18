@@ -1,4 +1,4 @@
-# AzureIoTHub
+# AzureIoTHub Environment
 Different operations using de IoT Hub
 - (Beta) Device Migration
 
