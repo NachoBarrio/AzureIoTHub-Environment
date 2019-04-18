@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceMigration", "DeviceMigration\DeviceMigration.csproj", "{1835925C-BF55-43FE-9AEF-A50E7DDA6B0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.IoTHub.Examples.CSharp.Core", "Core\Azure.IoTHub.Examples.CSharp.Core.csproj", "{E97D93E8-A92A-45B5-972C-B417E9C11858}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Core", "Core\CSharp.Core.csproj", "{E97D93E8-A92A-45B5-972C-B417E9C11858}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{DDF8DD80-3F6E-4047-B710-122C681A8598}"
+	ProjectSection(SolutionItems) = preProject
+		config\config.default.yaml = config\config.default.yaml
+		config\config.yaml = config\config.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

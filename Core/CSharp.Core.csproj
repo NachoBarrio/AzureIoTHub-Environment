@@ -7,8 +7,8 @@
     <ProjectGuid>{E97D93E8-A92A-45B5-972C-B417E9C11858}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Azure.IoTHub.Examples.CSharp.Core</RootNamespace>
-    <AssemblyName>Azure.IoTHub.Examples.CSharp.Core</AssemblyName>
+    <RootNamespace>CSharp.Core</RootNamespace>
+    <AssemblyName>CSharp.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

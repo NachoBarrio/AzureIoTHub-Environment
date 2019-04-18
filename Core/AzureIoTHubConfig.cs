@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Azure.IoTHub.Examples.CSharp.Core
+namespace CSharp.Core
 {
     /// <summary>
     /// Model of yaml configuration file.

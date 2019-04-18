@@ -2,7 +2,7 @@
 using System.IO;
 using YamlDotNet.Serialization;
 
-namespace Azure.IoTHub.Examples.CSharp.Core
+namespace CSharp.Core
 {
     public static class StringExtensions
     {

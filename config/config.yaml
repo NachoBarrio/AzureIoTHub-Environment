@@ -1,0 +1,11 @@
+AzureIoTHubConfig:
+  IoTHubUri:
+  IoTHubStorageUri:
+  IoTHubStorageContainer: 
+  IoTHubD2CEndpoint: messages/events
+  ConnectionString: HostName=RGCFSidiots128dac751c094102bc5f80dc4634eb77.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=oMNvZOfVKRXabXY9VSg1s5LmLTWkJZdY3sMWlhkVZhs=
+DeviceConfigs:
+- Nickname: My Test Device
+  DeviceId: DeviceId
+  Key: 
+  Status: Enabled
